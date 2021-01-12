@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+html{
+    font-family: sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Roboto', sans-serif;
+}
+.clearfix:after, .row:after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.maxwidth{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button{
+    display: inline-block;
+    padding: .9em 2.3em;
+    background-color: rgb(243, 170, 87);
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+
+}
+.button:hover{
+    background-color: rgb(153, 105, 51);
+}
+.top-header{
+    text-align: center;
+}
+
+.top-nav{
+    background-color:rgb(75, 45, 114) ;
+    text-align: center;
+}
+.top-nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.top-nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+
+}
+.top-nav a:hover{
+    background-color:rgb(108, 65, 165) ;
+}
+
+.top-content{
+    padding: 1em;
+    text-align: center;
+    background-color: #d4d3d3;
+}
+.top-content-title{
+    color: rgb(75, 45, 114);
+    font-size: 1.375em;
+    margin: 1.2em;
+    
+}
+.top-content-title2{
+    color: rgb(75, 45, 114);
+    font-size: 1.7em;
+    margin: 1.2em;
+    
+}
+.top-content-subtitle{
+    color:  rgba(75, 45, 114, 0.527);
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.mid-content{
+    padding: 2em;
+    background-color: #e9e8e8;
+    text-align: center;
+}
+.mid-content-title{
+    font-size: 1.25em;
+    color: rgb(75, 45, 114) ;
+    text-transform: uppercase;
+    
+}
+.mid-content p{
+    line-height: 1.5;
+    color: #222;
+}
+.mid-content span[class^=icon]{
+    font-size: 3em;
+    color: rgb(75, 45, 114) ;
+}
+.loja{
+    text-align: center;
+   
+}
+.imagens-produtos img{
+    border-radius: 15px;
+    margin: 2em;
+}
+
+.footer{
+    background-color: rgb(75, 45, 114);
+    color: rgb(209, 205, 205);
+    text-align: center;
+    
+    
+}
+.footer-menu{
+    background-color:rgb(90, 54, 138);
+    padding: .5em;
+}
+.footer-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.footer-menu li{
+    display: inline-block;
+    margin: 0 .5em;
+}
+.footer-menu a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: rgb(209, 205, 205);
+}
+.footer p{
+    padding:0 1em 1em 1em;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+
+@media screen and (min-width: 48.75em){
+    .top-logo{
+        float: left;
+    }
+    .top-header{
+
+    }
+    .top-nav{
+        background-color: transparent;
+        float: right;
+        margin-top: 25px;
+    }
+    .top-nav ul{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .top-nav li{
+        display: inline-block;
+    }
+    .top-nav a{
+        color: rgb(75, 45, 114);
+    }
+    .top-nav a:hover{
+        background-color: rgba(142, 103, 194, 0.884);
+    }
+    .top-content{
+        background-color:  rgb(75, 45, 114) ;
+        
+    }
+    .top-content-title, .top-content-subtitle{
+        color: white;
+    }
+
+    
+    .col-1-4{
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+    .col-1-2{
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+    
+
+}
+
+@media screen and (min-width: 62.5em){
+    .top-content{
+        background:rgb(192, 199, 201) url(../imagens/fundo.jpeg); 
+        height: 20em;
+        padding-top: 10em;
+         
+    }
+    .col-1-2{
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 74em){
+    .top-content{
+        background-image: url(../imagens/fundo.jpeg);
+        padding: 19em 10em 10em;
+        background-position: center;
+    }
+    .col-1-4{
+        width: 23%;
+        margin: 1%;
+    }
+    .col-1-2{
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+    
+}
